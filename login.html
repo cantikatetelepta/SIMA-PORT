@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="img/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><title>Login Admin | SIMA-PORT</title></head>
+<body class="login-page">
+<main class="login-box">
+  <img src="img/logo.svg" alt="">
+  <h1>SIMA-PORT</h1><small class="muted">Sistem Informasi Manajemen Pelabuhan</small>
+  <h2>Login Administrator</h2><p>Masuk untuk mengelola data jadwal kapal</p>
+  <div id="err" class="alert" hidden role="alert"></div>
+  <form id="f" novalidate>
+    <div class="field"><label for="u">Username</label><input id="u" name="username" autocomplete="username" required></div>
+    <div class="field"><label for="p">Password</label><div class="pw"><input id="p" name="password" type="password" autocomplete="current-password" required><button type="button" id="eye" aria-label="Tampilkan password">Lihat</button></div></div>
+    <button class="btn" type="submit" id="go">Masuk</button>
+  </form>
+  <p style="margin:16px 0 0"><a href="index.html">&larr; Kembali ke beranda</a></p>
+  <p style="margin:12px 0 0;font-size:12px">&copy; 2026 SIMA-PORT | Universitas Kristen Indonesia Maluku</p>
+</main>
+<script src="js/common.js"></script><script src="js/login.js"></script>
+</body></html>

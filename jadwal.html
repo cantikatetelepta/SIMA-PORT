@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="img/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"><title>Jadwal Kapal | SIMA-PORT</title></head>
+<body data-page="jadwal">
+<div id="site-header"></div>
+<main>
+<div class="page-banner"><h1>Jadwal Keberangkatan Kapal</h1><p>Informasi jadwal kapal dari tiga pelabuhan utama</p></div>
+<div class="container">
+  <form class="filters" id="filter" role="search">
+    <input id="q" type="search" maxlength="60" placeholder="Cari nama kapal atau tujuan..." aria-label="Cari nama kapal atau tujuan">
+    <select id="pel" aria-label="Pilih pelabuhan"><option value="">Semua Pelabuhan</option></select>
+    <button class="btn" type="submit">Cari</button>
+    <button class="btn outline" type="button" id="reset">Reset</button>
+  </form>
+  <div class="table-wrap"><table>
+    <thead><tr><th class="c">No</th><th>Nama Kapal</th><th class="c">Pelabuhan</th><th class="c">Tujuan</th><th class="c">Tanggal</th><th class="c">Jam Berangkat</th><th class="c">Status</th></tr></thead>
+    <tbody id="tbody"><tr><td colspan="7" class="empty">Memuat jadwal...</td></tr></tbody>
+  </table></div>
+  <div class="table-foot"><span>Data diperbarui pada: <b id="updated">-</b></span><div class="pager" id="pager"></div></div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="js/common.js"></script><script src="js/site.js"></script><script src="js/jadwal.js"></script>
+</body></html>
